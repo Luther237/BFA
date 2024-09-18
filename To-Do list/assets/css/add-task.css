@@ -1,0 +1,21 @@
+form{
+    display: block   ;
+    float: left;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 2px ;
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(0, 255, 255, 0.091);
+}
+.add{
+    float: right;
+    border-color: rgba(245, 245, 220, 0);
+    border-radius: 5px;
+    background-color: rgb(238, 150, 83);
+}
+.add:hover{
+    background-color: rgb(231, 170, 124);
+}

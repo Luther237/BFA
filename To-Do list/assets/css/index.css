@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+}
+#connexion{
+cursor: pointer;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+    display: block;
+    background-image: url("../img/background-image.jpg")
+}
+
+/* Header/Blog Title */
+.header {
+    display: block;
+    padding: 1px;
+    text-align: center;
+    background: hsla(56, 20%, 74%, 0.4);
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: hsla(0, 0%, 20%, 0.5);
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* right column */
+.rightcolumn {  
+    display: block; 
+    text-align: center;
+    float: left;
+    width: 75%;
+    background-color: hsla(0, 3%, 82%, 0.4);
+    height: 25rem;
+}
+
+/* Stylise table*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border-color: greenyellow;
+    padding: 2%;
+}
+tr:nth-child(even) {
+    background-color: hsla(0, 3%, 70%, 0.4);
+}
+ .action{
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 4%, 0.144);
+    color: rgb(26, 36, 24, 0.854);
+    transition: 0.4s;
+    border-radius: 5px;
+    padding: 5px;
+    }
+.action:hover{
+    background-color: #2b942bbe;
+}
+
+/* left column */
+.leftcolumn {
+    text-align: center;
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    height: 25rem;
+}
+.pbutton{
+    border: 0px;
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: hsl(42, 28%, 82%, 0);
+    transition: 1s;
+    background-color: hsla(234, 85%, 60%, 0.116);
+}
+.pbutton:hover{
+    background-color: hsla(180, 100%, 50%, 0.272);
+    font-size: 16px;
+}
+
+.iframe{
+height: 200px;
+display: none;
+transition: 1s;
+}
+form{
+    display: block   ;
+    float: left;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 2px ;
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(0, 255, 255, 0.091);
+}
+.add{
+    float: right;
+    border-color: rgba(245, 245, 220, 0);
+    border-radius: 5px;
+    background-color: rgb(238, 150, 83);
+    height: 20px;
+    width: 0;
+}
+
+.add:hover{
+    background-color: rgb(231, 170, 124);
+}
+
+
+.pbutton:active{
+    background-color: hsla(0, 0%, 69%, 0.459);
+    transition: 0,1s;
+    iframe{
+        display: block;
+    }
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: hsla(34, 78%, 91%,30%);
+    text-align: center;
+    color: #05050546;
+    padding-top: 20px;
+    margin-bottom: -100%;
+    
+}
+div #define_button:active{
+    background-color: #05050546;
+
+}
+
+
+/*Formulaire*/
+form{
+    display: block   ;
+    float: left;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 2px ;
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(0, 255, 255, 0.091);
+}
+.add{
+    float: right;
+    border-color: rgba(245, 245, 220, 0);
+    border-radius: 5px;
+    background-color: rgb(238, 150, 83);
+    width: 100px;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgb(231, 170, 124);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>To-Do list</h1>
+  <p>Gerez vos taches quotidiennes aisement!.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Accueil</a>
+  <a href="#">Paramètres</a>
+  <a href="#">A propos</a>
+  <a id="connexion" style="float:right">Connexion</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <blockquote></blockquote>
+      <button class="pbutton" id="define_button"  onclick='document.getElementById("iframe1").style.display = "block"'}else{ i++; onclick='document.getElementById("iframe1").style.display = "hidden"'}>Créer une tache</button>
+     
+     
+     
+      <form class="iframe" id="iframe1">
+        <label for="taskname">Tache</label>
+        <input type="text" id="add-task" name="taskname" placeholder="Nom de la tache">
+    
+        <label for="time">Temps accordé</label>
+        <input type="text" id="add-time" name="time" placeholder="Durée de la tache">
+        
+        <label for="taskuser">Executeur</label>
+        <div>
+        <input  id="add-user" list="users" name="taskuser" placeholder="Chargé de la tache">
+            <datalist id="users">
+                <option value="Luchest1">Luchest1</option>
+                <option value="Luchest2">Luchest2</option>
+                <option value="Luchest3">Luchest3</option>
+                <option value="Luchest4">Luchest4</option>
+                <option value="Luchest5">Luchest5</option>
+                <option value="Luchest6">Luchest6</option>
+            </data> 
+        </div>      
+        <a class="add" onclick="ajouter();">ajouter</a>
+             
+    </form>
+
+
+
+      <button class="pbutton">Supprimer une tache</button>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>VOS TACHES</h2>
+      <table>
+        <tr>
+          <th>Taches</th>
+          <th>Responsables</th>
+          <th>Temps Restants</th>
+          <th style="visibility: hidden;">Actions</th>
+        </tr>
+        <tr id="tache2">
+          <td id="task01" class="tache">Maquette</td>
+          <td id="resp02" class="resp">Luchest1</td>
+          <td id="time03" class="time">30min</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache2").style.display="none"'>Terminé!</a></td>
+        </tr>
+        <tr id="tache3">
+          <td id="task11" class="tache">Front-end HTML</td>
+          <td id="resp12" class="resp">Luchest2</td>
+          <td id="time13" class="time">60min</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache3").style.display="none"'>Terminé!</a></td>
+        </tr>
+        <tr id="tache4">
+          <td id="task21" class="tache">Front-end css</td>
+          <td id="resp22" class="resp">Luchest3</td>
+          <td id="time23" class="time">45min</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache4").style.display="none"'>Terminé!</a></td>
+
+        </tr>
+        <tr id="tache5">
+          <td id="task31" class="tache">Back-end</td>
+          <td id="resp32" class="resp">Luchest3</td>
+          <td id="time33" class="time">120min</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache5").style.display="none"'>Terminé!</a></td>
+        </tr>
+        <tr id="tache6" style="display: none;">
+          <td id="task41" class="tache">empty</td>
+          <td id="resp42" class="resp">empty</td>
+          <td id="time43" class="time">empty</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache6").style.display="none"'>Terminé!</a></td>
+        </tr>
+        <tr id="tache7" style="display: none">
+          <td id="task51" class="tache">empty</td>
+          <td id="resp52" class="resp">empty</td>
+          <td id="time53" class="time">empty</td>
+          <td><a class="action" href="#" onclick='document.getElementById("tache6").style.display="none"'>Terminé!</a></td>
+        </tr>
+      </table>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<footer><h2>©Copyright-Luchest</h2></footer>
+  
+<script src="./assets/ts/index.ts"></script>
+<script src="./assets/ts/index.js"></script>
+</body>
+</html>
